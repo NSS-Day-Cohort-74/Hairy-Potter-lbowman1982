@@ -120,12 +120,17 @@ In the `main.js` module, invoke the `PotteryList` component function. Take its r
 > 🧨 Before you click the "Assessment Complete" button on the Learning Platform, add your answers below for each question and make a commit. It is your option to request a face-to-face meeting with a coach for a vocabulary review.
 
 1. Explain how you got the HTML, with the correct data, displayed in the browser?
-   > Your answer here
+   > First, it was necessary to put an article tag in the body of the HTML (because the body is where dynamic (can change) values are held) with the class of potteryList in the index.html module to define a DOM target (what the code looks for to find what it needs to actually show on the browser).  Next, it was necessary to create a function that converts each object in the array to an HTML representation string, that returns the pottery to be sold in HTML.  Within the HTML of that function the dynamic values of the properties are accessed by ${interpolating}them.  The for of loop in this function iterates through the objects in the array to evaluate which meet the requirements to be available to be sold. Those are the objects that will be printed on the DOM. Finally, it is necessary to invoke or call the potteryList function in the main.js module with the parameters of the array usePottery with empty parameters attached to usePottery (this indicates that this function should run right now, as its being called).  After the potteryList function is invoked in main.js, also in main.js, it is necessary to access the the article with the class potteryList that was added to the index.html module.  This is done by targeting the element of Class Name with the index of 0 (this is the first time in the module that a class name is defined so it is index 0).          
+
+
 2. In the **PotteryList** module, when you iterate your pottery, you need to show the evidence of what the **weight** property's value is for the 2nd piece of pottery. Use [Loom](https://www.loom.com/) to record your browser window with the developer tools open and show those values.
-   > Paste your video's public URL here
+   > https://www.loom.com/share/ddf59ad47f0b47b9a69d34c5f3823bd3?sid=ee7e25b8-8fb1-4fca-b227-71c622427c18
+
 3. The **PotteryWheel** module has a single function named `makePottery`. Why doesn't that module have all of the other code in it?
-   > Your answer here
+   > This module has a single responsibility and the function also has a single responsibility.  The information this function is dependent on is given in the instructions.  This is the first function that runs in main.js because in potteryList.js the function defines what the pottery to be made will be by creating an object for each piece of pottery and assigning properties to each.   
+
 4. The pottery shop has learned that there is a set of customers that are willing to buy cracked pottery at a discounted price of $2.50. That means that the cracked pottery should now be displayed in the catalog. Explain the changes that this new business strategy would cause to your algorithm.
-   > Your answer here
+   > Allowing cracked pottery to be sold with a price of 2.50 would require a change in the function toSellOrNotToSell.  it would require an additional if statement with the following condition, toSellObj.cracked === true then assign the property of price 2.50 (toSellObj.price = 2.50)  It would also need to be pushed into the array of usePottery in order for cracked pottery to be listed in the available pottery for sale.   
+
 5. In the **Kiln** module, you have a `firePottery()` function. You need to demonstrate how to use the debugger to verify the values of the parameters for that function when your code runs. Use [Loom](https://www.loom.com/) to record your browser window with the developer tools open and show those values.
-   > Paste your video's public URL here
+   > https://www.loom.com/share/e4e12b476c6b4ff18c3ce2a98ccadf2b?sid=c21b17ce-c6d6-4d24-8f6c-a3ad89f7e9e0
