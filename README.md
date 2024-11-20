@@ -134,3 +134,4 @@ In the `main.js` module, invoke the `PotteryList` component function. Take its r
 
 5. In the **Kiln** module, you have a `firePottery()` function. You need to demonstrate how to use the debugger to verify the values of the parameters for that function when your code runs. Use [Loom](https://www.loom.com/) to record your browser window with the developer tools open and show those values.
    > https://www.loom.com/share/e4e12b476c6b4ff18c3ce2a98ccadf2b?sid=c21b17ce-c6d6-4d24-8f6c-a3ad89f7e9e0
+# Hairy-Potter
